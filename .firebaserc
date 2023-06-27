@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "chart-app-57799": {
+      "hosting": {
+        "firechat": [
+          "chart-app-57799"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "chart-app-57799"
+  }
+}
