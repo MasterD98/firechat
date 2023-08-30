@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NonNullableFormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { HotToastService } from '@ngneat/hot-toast';
-import { AuthenticationService } from 'src/app/services/authentication.service';
+import { AuthenticationService } from 'src/app/services/authentication.service'; 
 
 @Component({
   selector: 'app-login',
@@ -22,8 +22,7 @@ export class LoginComponent implements OnInit {
     private fb: NonNullableFormBuilder
   ) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   get email() {
     return this.loginForm.get('email');
@@ -33,7 +32,7 @@ export class LoginComponent implements OnInit {
     return this.loginForm.get('password');
   }
 
-  public submit() {
+  submit() {
     const { email, password } = this.loginForm.value;
 
     if (!this.loginForm.valid || !email || !password) {
