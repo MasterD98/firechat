@@ -27,6 +27,7 @@ import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HotToastModule } from '@ngneat/hot-toast';
+import {MatAutocompleteModule} from '@angular/material/autocomplete'
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { HotToastModule } from '@ngneat/hot-toast';
     provideStorage(() => getStorage()),
     ReactiveFormsModule,
     HotToastModule.forRoot(),
-    MatMenuModule
+    MatMenuModule,
+    MatAutocompleteModule
   ],
   providers: [
     ScreenTrackingService,UserTrackingService
