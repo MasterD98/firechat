@@ -16,7 +16,9 @@ export class UsersService {
           return of(null)
         }
         const ref=doc(this.firestore,'users',user?.uid)
-        return docData(ref) as Observable<UserProfile>
+        const userTemp=docData(ref) as Observable<UserProfile>
+        console.log(userTemp)
+        return userTemp
       })
     )
   }
